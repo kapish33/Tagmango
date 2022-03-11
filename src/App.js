@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import "./App.css";
+import { customPlaylist, getData } from "./Redux/actions";
+import { v4 as uuidv4 } from "uuid";
 
 function App() {
+  const dispatch = useDispatch();
+  const songs = useSelector((state) => state.songs);
+  console.log(songs);
+
+  useEffect(() => {
+    dispatch(getData);
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick={() => dispatch(customPlaylist("atif Aslam"))}>
+        sort by artits
+      </button>
+      <div>
+        {songs.map((song) => {
+          return (
+            <div key={uuidv4()}>
+              <h1>{song.song}</h1>
+              <p>{song.artists}</p>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

@@ -1,14 +1,13 @@
 import { CUSTOM_PLAYLIST, SETDATA } from "./actionTypes";
 
-const initialState = { songs: [] };
+const initialState = { songs: [], constArray: [] };
 
 export const getDataReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case SETDATA:
-      return { songs: payload };
+      return { songs: payload, constArray: payload };
 
     case CUSTOM_PLAYLIST:
-      console.log(payload);
       return {
         songs: state.songs.filter(
           (song) =>

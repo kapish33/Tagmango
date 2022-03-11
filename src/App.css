@@ -1,0 +1,67 @@
+.audioBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 310px;
+  background-color: #fafafa;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
+}
+
+.allSongs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid #ccc;
+  animation: rotation 10s infinite linear;
+}
+/* rotation animation */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.playlistBtn {
+  background-color: #fafafa;
+  border-radius: 25px;
+  border: 0px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
+  animation: y-movement 1s infinite alternate ease-in-out;
+}
+
+@keyframes y-movement {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}
+.playlistBtn:hover {
+  background-color: #1d4990;
+  color: white;
+  animation: jump 1s infinite alternate;
+}
+@keyframes jump {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { customPlaylist, getData } from "./Redux/actions";
+import { getData } from "./Redux/actions";
 import { v4 as uuidv4 } from "uuid";
 
 const Home = () => {
@@ -16,7 +16,16 @@ const Home = () => {
   };
   useEffect(() => {
     dispatch(getData);
+    setPlaylist([
+      {
+        song: "Afreen Afreen",
+        url: "http://hck.re/Rh8KTk",
+        artists: "Rahat Fateh Ali Khan, Momina Mustehsan",
+        cover_image: "http://hck.re/kWWxUI",
+      },
+    ]);
   }, []);
+  // load default playlist
   return (
     <div>
       <select
@@ -34,7 +43,7 @@ const Home = () => {
           );
         })}
       </select>
-
+      <span onClick={() => {}}></span>
       <div className="allSongs">
         {playlist.map((song) => {
           return (

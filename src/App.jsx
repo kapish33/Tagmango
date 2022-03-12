@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./App.css";
-import { customPlaylist, getData } from "./Redux/actions";
+import { getData } from "./Redux/actions";
 import { v4 as uuidv4 } from "uuid";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import Home from "./Home.jsx";

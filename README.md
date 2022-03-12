@@ -14,9 +14,11 @@
 
 Landing Page
 
-![tagmango1](/home/kapish/Documents/ME/test/tagmango/gitimages/tagmango1.png)
+![tagmango1](/tagmango1.png)
 
 Playlist Page
+
+![tagmngo2](/tagmngo2.png)
 
 ## Created By
 

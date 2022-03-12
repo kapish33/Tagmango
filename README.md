@@ -1,6 +1,7 @@
 # Tagmango
 
 [Deployed Live Link ](https://tagmango.netlify.app/)
+[video Example](https://drive.google.com/file/d/1MXgZP3cP2uYKLfYlBF2haA3t8xf3_wAP/view?usp=sharing)
 
 ## Features
 

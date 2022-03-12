@@ -14,11 +14,11 @@
 
 Landing Page
 
-![tagmango1](/tagmango1.png)
+![tagmango1](https://github.com/kapish33/Tagmango/blob/main/gitimages/tagmango1.png)
 
 Playlist Page
 
-![tagmngo2](/tagmngo2.png)
+![tagmngo2](https://github.com/kapish33/Tagmango/blob/main/gitimages/tagmngo2.png)
 
 ## Created By
 
